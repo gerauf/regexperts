@@ -1,5 +1,5 @@
 # RegExperts
-#### ...or learn regexes with Edward Snowden
+#### ...or learn regular expressions with Edward Snowden
 
 Regexperts is a "fun" game to help you learn the dark arts of regular expressions.
 
