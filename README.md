@@ -3,6 +3,8 @@
 
 Regexperts is a "fun" game to help you learn the dark arts of regular expressions.
 
+![Eddy](http://i.imgur.com/bycklVR.png)
+
 #### How to play
 
 - If you haven't already install [Node](https://nodejs.org/)
@@ -27,5 +29,3 @@ npm run start
 - Hints
 - Game over and win conditions
 - Top scores saved and persisted via a de-coupled back-end
-
-![Eddy](http://imgur.com/bycklVR)
