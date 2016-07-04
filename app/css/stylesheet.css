@@ -1,3 +1,7 @@
+html {
+  font-size: 14.5px;
+}
+
 body{
   font-family: 'Fira Sans', sans-serif;
   background-color: white;
@@ -42,6 +46,7 @@ th{
   max-width:50%;
   white-space:nowrap;
 }
+
 
 .terminal h6 {
   color: lime;
@@ -223,11 +228,3 @@ h1.demo-text{
   92%   {top:-13em;-webkit-transform: rotate(-14deg);}
   100%  {top: -13em; -webkit-transform: rotate(-10deg);}
 }
-
-
-/*@-keyframes drop {
-    0%   {top:-1000px;}
-    94%   {top:0px;}
-    98%  {top:10px;}
-    100%  {top:0px;}
-}*/
