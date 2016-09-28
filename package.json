@@ -4,6 +4,7 @@
   "description": "regexp game",
   "main": "index.js",
   "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
     "start": "cd app && ../node_modules/http-server/bin/http-server",
     "update-selenium": "./node_modules/protractor/bin/webdriver-manager update",
     "start-selenium": "./node_modules/protractor/bin/webdriver-manager start",
