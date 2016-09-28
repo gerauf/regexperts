@@ -3,6 +3,7 @@ angular.module('regexpert')
 
 function LevelFactory() {
 
+
   var Level = function(levelProperties) {
     this.number = levelProperties.number;
     this.text = levelProperties.text;
@@ -11,6 +12,7 @@ function LevelFactory() {
     this.keystrokelimit = levelProperties.keystrokelimit;
     this.hint = levelProperties.hint;
   };
+
 
   Level.prototype.isComplete = function (search) {
     return findOutput(this.text, this.target) === findOutput(this.text, search);

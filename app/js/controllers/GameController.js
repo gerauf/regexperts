@@ -1,5 +1,5 @@
 angular.module('regexpert')
-       .controller('GameController',GameController);
+       .controller('GameController', GameController);
 
 GameController.$inject = ['HighlightService', 'LevelService', 'GameService', '$state'];
 

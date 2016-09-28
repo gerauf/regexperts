@@ -22,9 +22,9 @@ function HighScoreController(GameService, HighScoreService) {
 
   function add(score, user) {
     if(vm.canAdd){
+      vm.canAdd = false
       return HighScoreService.postHighScores({user: user, score: score})
       .then(getScores)
-      .then(vm.canAdd = false);
     }
   }
 
