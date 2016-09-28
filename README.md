@@ -5,7 +5,13 @@ Regexperts is a "fun" game to help you learn the dark arts of regular expression
 
 ![Eddy](http://i.imgur.com/bycklVR.png)
 
+
+
 #### How to play
+
+Head over to https://snowden-files.herokuapp.com to start playing or alternatively you can clone the repo and run it locally
+
+**To run locally**
 
 - If you haven't already install [Node](https://nodejs.org/)
 - If you haven't already install Bower - you can use the following command from the terminal

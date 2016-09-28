@@ -24,6 +24,7 @@ module.exports = function(config){
               'karma-jasmine',
               "karma-spec-reporter"
       ],
+
       reporters: ["spec"],
         specReporter: {
         maxLogLines: 5,

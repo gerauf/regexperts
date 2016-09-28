@@ -40,13 +40,13 @@ describe('GameController', function(){
 
   describe('#activate', function(){
     it('starts a new game on initialisation', function(){
-      expect(game.level.number).toEqual(1);
+      expect(game.level.number).toEqual(level1.number);
     });
   });
 
   describe('#evaluate', function(){
     it('changes to gameover screen if key stroke limit reaches 0', function(){
-      for(var i = 0; i < 50; i++){
+      for(var i = 0; i < level1.keystrokelimit; i++){
         game.level.reduceKeyLimit();
       }
       game.evaluate();
@@ -68,7 +68,7 @@ describe('GameController', function(){
       });
 
       it('updates the score', function() {
-        expect(GameService.getGameState().score).toEqual(50);
+        expect(GameService.getGameState().score).toEqual(level1.keystrokelimit);
       });
 
       it('goes to win screen after level 10', function(){
