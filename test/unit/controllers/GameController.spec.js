@@ -14,7 +14,7 @@ describe('GameController', function(){
 
   var finalLevel = {
         id:     2,
-        number: 10,
+        number: 4,
         text:   "Hiya there buddy",
         target: "ya",
         keystrokelimit: 5
@@ -64,14 +64,14 @@ describe('GameController', function(){
 
     describe('#completeLevel', function() {
       it('gets the next level', function() {
-        expect(game.level.number).toEqual(10);
+        expect(game.level.number).toEqual(4);
       });
 
       it('updates the score', function() {
         expect(GameService.getGameState().score).toEqual(level1.keystrokelimit);
       });
 
-      it('goes to win screen after level 10', function(){
+      it('goes to win screen after level 4', function(){
         game.completeLevel();
         httpBackend.flush();
         expect(state.current.name).toEqual('winner');
