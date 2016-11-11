@@ -35,3 +35,23 @@ npm run start
 - Hints
 - Game over and win conditions
 - Top scores saved and persisted via a de-coupled back-end
+
+#### Running tests
+
+- To run the unit tests type the following code into the command line
+```
+npm run test-units
+```
+
+- To run feature tests selenium webdriver needs to be running in the background
+```
+npm run update-selenium
+npm run start-selenium
+```
+
+- Then in a new terminal window navigate to the root of this directory and then type
+```
+npm run test-features
+```
+
+If you are having issues this may be because the version of chrome driver being used is not compatible with the latest versions of chrome - you will need to be using chromedriver v2.25 or later. 
