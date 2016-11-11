@@ -27,7 +27,7 @@ describe("regexpert", function(){
           method: 'GET'
         },
         response: {
-          data:{id: 3, number: 10, mission: "Final mission", text: "Beat the big bad dad boss.", target: "[bd]ad", keystrokelimit: 7}
+          data:{id: 3, number: 4, mission: "Final mission", text: "Beat the big bad dad boss.", target: "[bd]ad", keystrokelimit: 7}
         }
       }
     ]);
@@ -84,7 +84,7 @@ describe("regexpert", function(){
     expect(browser.getLocationAbsUrl()).toEqual('/');
   });
 
-  it('after finshing level 10 player take to win screen', function() {
+  it('after finshing level 4 player take to win screen', function() {
     $('input#user-input').sendKeys('\\b[a-z]..\\b');
     $('button#next-level').click();
     $('input#user-input').sendKeys('\\b[a-z]..\\b');
